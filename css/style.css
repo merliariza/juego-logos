@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*{
+    justify-self: center;
+    
+    
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    
+}
+
+.container {
+    display: inline-block;
+  }
+  .brands, .cars {
+    margin: 20px;
+  }
+  .cars {
+    display: none;
+  }
+
+  img {
+    width: 300px;
+    height: auto
+  }
+.button_enviar{
+    background-color: rgba(235, 235, 235, 0.753);
+    border-radius: 10px;
+    border-color: rgb(77, 77, 77);
+    left: 50px;
+    display: flex;
+}
