@@ -3,24 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="js/app.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Juego de logos</title>
 </head>
-<body>
+<body onload="iniciarJuego();">
   <div class="container">
-
-    <p><img id="ia" alt="Imagen aleatoria" src="images/toyota.png" /></p>
-    <p><img id="ia" alt="Imagen aleatoria" src="images/ford.png" /></p>
-    <p><img id="ia" alt="Imagen aleatoria" src="images/bmw.jpg" /></p>
-    <p><img id="ia" alt="Imagen aleatoria" src="images/mazda.png" /></p>
-    <p><img id="ia" alt="Imagen aleatoria" src="images/suzuki.png" /></p>
-    <p><img id="ia" alt="Imagen aleatoria" src="images/volkswagen.png" /></p>
-    <p><img id="ia" alt="Imagen aleatoria" src="images/chevrolet.jpg" /></p>
-    <p><img id="ia" alt="Imagen aleatoria" src="images/hyundai.png" /></p>
-    <p><img id="ia" alt="Imagen aleatoria" src="images/honda.jpg" /></p>
-    <p><img id="ia" alt="Imagen aleatoria" src="images/kia.png" /></p>
-    <button onclick="cambiar();">Cambiar imagen</button></p>
-
+    <div class="image-container">
+      <img id="ia" alt="Logo aleatorio" src="" />
+    </div>
     <div class="brands">
       <label for="brandSelect">Selecciona la marca:</label>
       <select id="brandSelect">
@@ -36,10 +27,8 @@
         <option value="honda">Honda</option>
         <option value="kia">KIA</option>
       </select>
-
     </div>
-        <button class="button_enviar">Enviar</button>
-  <script src="js/app.js"></script>
-  <body onload="cambiar()"></body>
+    <button class="button_enviar" onclick="verificar();">Enviar</button>
+  </div>
 </body>
 </html>
